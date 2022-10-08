@@ -1,9 +1,5 @@
 #!/bin/bash
 #testing webhook with this code
-echo "Hello World to the world of Jenkins"
-curl -i ifconfig.co
-
-#!/bin/bash
 echo "running apt update"
 sudo apt update
 
