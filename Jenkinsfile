@@ -25,7 +25,7 @@ pipeline {
                 script {
                     sh """
                     #!/bin/bash
-                    ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no 35.183.185.128 << EOF
+                    ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no ubuntu@ec2-35-183-185-128.ca-central-1.compute.amazonaws.com << EOF
                     curl ifconfig.co/ip
                     df -h
                     exit
