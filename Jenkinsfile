@@ -17,7 +17,7 @@ pipeline {
         stage("connect to deploy server"){
 
             environment { 
-                SSH_CRED = credentials('jenkinstest')
+                SSH_CRED = credentials('jenkinstest-pem')
             }
 
             steps {
