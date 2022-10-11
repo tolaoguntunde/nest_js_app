@@ -10,7 +10,7 @@ pipeline {
                 sh "curl ifconfig.co"
                 sh "echo the above is the jenkins IP"
             }
-        
+        }
 
         stage("connect to deploy server"){
 
@@ -69,8 +69,7 @@ pipeline {
                     << EOF
                     """
                 }
+	        }
 	    }
-	}
-	}
     }
-	
+}
